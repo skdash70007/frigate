@@ -70,6 +70,7 @@ class FrigateMotionDetector(MotionDetector):
         # it takes ~30 frames to establish a baseline
         # dont bother looking for motion
         if self.frame_counter < 30:
+            print("hi")
             self.frame_counter += 1
         else:
             if self.save_images:
